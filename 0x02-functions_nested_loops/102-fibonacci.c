@@ -1,6 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include "main.h"
+
 /**
  * main - Entry point
  *
@@ -8,6 +7,17 @@
  */
 int main(void)
 {
+	int i, n = 50, prev = 1, curr = 2, next;
 
-	return (0);
+	printf("%d, %d", prev, curr);
+	for (i = 2; i < n; i++) 
+	{
+        	next = prev + curr;
+        	printf(", %d", next);
+        	prev = curr;
+        	curr = next;
+        }
+	printf("\n");
+	return 0;
 }
+

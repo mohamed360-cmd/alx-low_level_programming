@@ -7,17 +7,20 @@
  */
 int main(void)
 {
-	int i, n = 50, prev = 1, curr = 2, next;
+    int i, n = 50;
+    long int prev = 1, curr = 2, next;
 
-	printf("%d, %d", prev, curr);
-	for (i = 2; i < n; i++) 
-	{
-        	next = prev + curr;
-        	printf(", %d", next);
-        	prev = curr;
-        	curr = next;
-        }
-	printf("\n");
-	return 0;
+    printf("%ld, %ld", prev, curr);
+
+    for (i = 2; i < n; i++)
+    {
+        next = prev + curr;
+        printf(", %ld", next);
+        prev = curr;
+        curr = next;
+    }
+
+    printf("\n");
+
+    return (0);
 }
-

@@ -1,9 +1,9 @@
 #include "main.h"
-/*Without using the 
- * std library
- * butonly the _putchasr function from our
- * main.h header
- **/
+/** 
+ * main - Entry point
+ * Description : 'prints _putchar to the std output
+ * return: always 0
+ */
 int main(void)
 {
 	_putchar('_');
@@ -17,4 +17,3 @@ int main(void)
 	_putchar('\n');
 	return (0);
 }
-
